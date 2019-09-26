@@ -1,0 +1,19 @@
+---
+version: '3'
+
+services:
+  drupal:
+    image: dcycle/drupal-tester:1
+    volumes:
+      - "./modules:/var/www/html/modules/custom"
+    ports:
+      - "80"
+    links:
+      - mysql:mysql
+    working_dir: /var/www/html
+
+  mysql:
+    image: mysql:5
+    environment:
+      MYSQL_DATABASE: drupal
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
