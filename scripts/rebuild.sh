@@ -21,8 +21,8 @@ DATE=`date '+%Y-%m-%d-%H-%M-%S-%Z'`
 MAJORVERSION='1'
 VERSION='1.0'
 
-# Start by getting the latest version of the official node image
-docker pull node
+# Start by getting the latest version of the dcycle/drupal:8drush9 image
+docker pull dcycle/drupal:8drush9
 # Rebuild the entire thing
 docker build --no-cache -t dcycle/"$PROJECT":"$VERSION" .
 docker build -t dcycle/"$PROJECT":"$MAJORVERSION" .
