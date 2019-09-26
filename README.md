@@ -1,6 +1,8 @@
 Drupal tester
 =====
 
+[![CircleCI](https://circleci.com/gh/dcycle/drupal-tester.svg?style=svg)](https://circleci.com/gh/dcycle/drupal-tester)
+
 Quickstart
 -----
 
