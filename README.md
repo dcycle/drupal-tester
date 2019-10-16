@@ -8,7 +8,7 @@ Quickstart
 
 To run tests for, for example [Node Revisions Autoclean](https://www.drupal.org/project/node_revisions_autoclean):
 
-    git clone
+    git clone https://github.com/dcycle/drupal-tester.git
     cd drupal-tester
     mkdir -p modules
     cd modules && git clone --branch 8.x-1.x https://git.drupalcode.org/project/node_revisions_autoclean.git
