@@ -6,12 +6,13 @@ Drupal tester
 Quickstart
 -----
 
-To run tests for, for example [Node Revisions Autoclean](https://www.drupal.org/project/node_revisions_autoclean):
+To run unit tests, for example, for [Unit Test Tutorial](https://www.drupal.org/project/unit_test_tutorial):
 
     git clone https://github.com/dcycle/drupal-tester.git
-    cd drupal-tester
+    cd drupal-tester/
     mkdir -p modules
-    cd modules && git clone --branch 8.x-1.x https://git.drupalcode.org/project/node_revisions_autoclean.git
+    cd modules
+    git clone --branch 8.x-1.x https://git.drupalcode.org/project/unit_test_tutorial.git
     cd ..
-    docker-compose up -d
-    ./scripts/test.sh "--verbose --suppress-deprecations node_revisions_autoclean"
+    ./scripts/test.sh "--verbose --suppress-deprecations unit_test_tutorial"
+    docker-compose down -v

@@ -12,6 +12,6 @@ set -e
 # docker-compose up -d --build
 
 echo ' => Run tests'
-docker-compose exec drupal /bin/bash -c "chsh -s /bin/bash www-data && su - www-data -- /scripts/test.sh $1"
+docker-compose run --rm drupal /bin/bash -c "chsh -s /bin/bash www-data && su - www-data -- /scripts/test.sh $1"
 
 # docker-compose down
