@@ -1,7 +1,7 @@
 Drupal tester
 =====
 
-[![CircleCI](https://circleci.com/gh/dcycle/drupal-tester.svg?style=svg)](https://circleci.com/gh/dcycle/drupal-tester)
+** 2022-12-30: THIS PROJECT IS DEPRECATED **
 
 **Until [this issue](https://github.com/dcycle/drupal-tester/issues/2) is fixed, I recommend using CircleCI and the technique outlined in [Start unit testing your Drupal and other PHP code today, October 16, 2019, Dcycle Blog](https://blog.dcycle.com/blog/2019-10-16/unit-testing/) for unit testing**
 
